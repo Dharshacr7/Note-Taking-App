@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    font-family: "Outfit", sans-serif;
+}
+body{
+    background-color: rgb(230, 188, 83);
+}
+
+.head{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 1rem;
+    box-shadow: 0px 0px 10px grey;
+    width: 100%;
+    backdrop-filter: blur(2px);
+    background-color: antiquewhite;
+}
+
+.head p{
+    color: rgb(0, 0, 0);
+    text-decoration:underline;
+    padding: 1px;
+}
+
+.inputs{
+    display: flex;
+    gap: 1rem;
+    padding: 1rem;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+}
+.inputs input{
+    width: 70%;
+    padding: 5px;
+    outline: none;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+.inputs button{
+    padding: 5px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid rgb(0, 0, 0);
+    transition: all 0.3s;
+}
+
+main{
+    width: 100%;
+    height: 100vh;
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: repeat(1, 100%);
+    gap: 10px;
+}
+
+.notes{
+    width: fit-content;
+    height: 200px;
+    box-shadow: 0px 0px 5px rgb(48, 46, 46);
+    border-radius: 10px;
+    background-color: antiquewhite;
+    overflow: hidden;
+}
+
+.note-head{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 0px;
+    gap: 2rem;
+    border-bottom: 1px solid rgb(197, 192, 192);
+}
+.note-head button{
+    padding: 6px;
+    height: 100%;
+    width: 100%;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    outline: none;
+    border: 1px solid gold;
+    color: rgb(0, 0, 0);
+    font-weight: 600;
+    font-size: 13px;
+    transition: all 0.3s;
+    background-color: rgb(255, 43, 43);
+}
+.note-head button:hover{
+    color: rgb(0, 0, 0);
+    background-color: rgb(176, 54, 54);
+}
+
+
+
+#note-text{
+    color: rgb(96, 89, 48);
+    font-weight: 400;
+    padding: 10px;
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+    text-wrap:wrap;
+}
+
+
+@media screen and (max-width: 527px){
+    .note-container{
+        grid-template-columns: repeat(1,100%);
+        align-items: center;
+    }
+    .notes{
+        width: 100%;
+    }
+}
