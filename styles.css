@@ -111,6 +111,15 @@ main{
 }
 
 
+footer{
+    position: fixed;
+    bottom: 0;
+    padding: 1rem;
+    background-color: bisque;
+    width: 100%;
+    text-align: center;
+}
+
 @media screen and (max-width: 527px){
     .note-container{
         grid-template-columns: repeat(1,100%);
